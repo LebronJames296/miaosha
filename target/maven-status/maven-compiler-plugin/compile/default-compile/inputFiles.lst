@@ -1,1 +1,15 @@
+E:\IJ_folder\miaosha\src\main\java\com\miaoshaproject\service\model\UserModel.java
+E:\IJ_folder\miaosha\src\main\java\com\miaoshaproject\controller\viewobject\UserVO.java
+E:\IJ_folder\miaosha\src\main\java\com\miaoshaproject\dao\UserDOMapper.java
+E:\IJ_folder\miaosha\src\main\java\com\miaoshaproject\dataobject\UserDO.java
+E:\IJ_folder\miaosha\src\main\java\com\miaoshaproject\controller\BaseController.java
+E:\IJ_folder\miaosha\src\main\java\com\miaoshaproject\dao\UserPasswordDOMapper.java
+E:\IJ_folder\miaosha\src\main\java\com\miaoshaproject\dataobject\UserPasswordDO.java
+E:\IJ_folder\miaosha\src\main\java\com\miaoshaproject\error\CommonError.java
+E:\IJ_folder\miaosha\src\main\java\com\miaoshaproject\service\impl\UserServiceImpl.java
+E:\IJ_folder\miaosha\src\main\java\com\miaoshaproject\controller\UserController.java
 E:\IJ_folder\miaosha\src\main\java\com\miaoshaproject\App.java
+E:\IJ_folder\miaosha\src\main\java\com\miaoshaproject\error\BusinessException.java
+E:\IJ_folder\miaosha\src\main\java\com\miaoshaproject\error\EmBusinessError.java
+E:\IJ_folder\miaosha\src\main\java\com\miaoshaproject\response\CommonReturnType.java
+E:\IJ_folder\miaosha\src\main\java\com\miaoshaproject\service\UserService.java

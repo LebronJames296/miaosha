@@ -1,1 +1,15 @@
+com\miaoshaproject\response\CommonReturnType.class
+com\miaoshaproject\controller\UserController.class
+com\miaoshaproject\service\model\UserModel.class
+com\miaoshaproject\error\CommonError.class
+com\miaoshaproject\service\UserService.class
+com\miaoshaproject\error\EmBusinessError.class
+com\miaoshaproject\controller\BaseController.class
+com\miaoshaproject\dataobject\UserDO.class
+com\miaoshaproject\dataobject\UserPasswordDO.class
 com\miaoshaproject\App.class
+com\miaoshaproject\dao\UserDOMapper.class
+com\miaoshaproject\service\impl\UserServiceImpl.class
+com\miaoshaproject\controller\viewobject\UserVO.class
+com\miaoshaproject\dao\UserPasswordDOMapper.class
+com\miaoshaproject\error\BusinessException.class
