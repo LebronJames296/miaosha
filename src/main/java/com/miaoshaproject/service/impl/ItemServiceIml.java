@@ -68,11 +68,12 @@ public class ItemServiceIml implements ItemService {
         throw new BusinessException(EmBusinessError.PARAMETER_VALIDATION_ERROR,result.getErrMsg());
     }
 
-        //转化itenmodel ->dataobject
+        //转化itemmodel ->dataobject
     ItemDO itemDO =this.convertItemDOFormItemModel(itemModel);
 
         //写入数据库
     itemDOMapper.insertSelective(itemDO);
+    //itemDO写入数据库时会自增的生成一个id，但是model还没有，这时就需要设置一下
     itemModel.setId(itemDO.getId());
 
     ItemStockDO itemStockDO =this.convertItemStockDOFromItemModel(itemModel);
@@ -105,9 +106,29 @@ public class ItemServiceIml implements ItemService {
         ItemStockDO  itemStockDO =itemStockDOMapper.selectByItemId(itemDO.getId());
 
         //将dataobject->model
-     ItemModel itemModel =convertModelFromDataObject(itemDO,itemStockDO);
+         ItemModel itemModel =convertModelFromDataObject(itemDO,itemStockDO);
 
         return itemModel;
+    }
+
+    @Override
+    @Transactional
+    public boolean decreaseStock(Integer itemId, Integer amount) throws BusinessException {
+        int affectedRow =itemStockDOMapper.decreaseStock(itemId,amount);
+        if(affectedRow>0){
+            //更新库存成功
+            return true;
+        }else{
+            //更新库存失败
+            return false;
+        }
+
+    }
+
+    @Override
+    @Transactional
+    public void increaseSales(Integer itemId, Integer amount) throws BusinessException {
+        itemDOMapper.increaseSales(itemId,amount);
     }
 
 
